@@ -43,6 +43,14 @@ const Convert: React.FC = () => {
                 return;
             }
 
+            const supportedFormats = ["image/png", "image/jpeg", "image/webp", "image/svg+xml", "application/pdf", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "text/plain"];
+            if (!supportedFormats.includes(fileType)) {
+                toast.error("Bu dosya türü şu anda desteklenmemektedir. Proje sürekli olarak güncellenmekte ve yeni dönüştürme özellikleri eklenmektedir. Anlayışınız için teşekkür ederiz.", { autoClose: 15000 });
+                setFiles([]);
+                setFileType(null);
+                return;
+            }
+
             setFileType(fileType);
         } else {
             setFileType(null);
