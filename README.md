@@ -42,11 +42,11 @@ Ensure you have the following installed on your local machine:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/file-convert.git
+     git clone https://github.com/FSevencan/FileConvertReact.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd file-convert
+    cd FileConvertReact
     ```
 3. Install the dependencies:
     ```sh
